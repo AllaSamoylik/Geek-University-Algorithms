@@ -7,10 +7,10 @@ if letter_1 != letter_2:
         place_2 = ord(letter_2) - ord('a') + 1
         print(f'Буква "{letter_1}" стоит на {place_1} месте в алфавите, буква "{letter_2}" - на {place_2} месте')
         if place_1 < place_2:
-            place_dif = place_2 - place_1
+            place_dif = place_2 - place_1 - 1
             print(f'Между ними {place_dif} букв(ы)')
         else:
-            place_dif = place_1 - place_2
+            place_dif = place_1 - place_2 - 1
             print(f'Между ними {place_dif} букв(ы)')
     else:
         print('Вычисление невозможно: один / оба символа не являются строчными буквами английского алфавита')
