@@ -2,7 +2,7 @@
 a, b, c = map(int, input('Введите длину трёх отрезков: \n').split())
 
 if a < b + c and b < a + c and c < a + b:
-    if a != b != c:
+    if a != b and a != c and b != c:
         print('Треугольник является разносторонним')
     elif a == b == c:
         print('Треугольник является равносторонним')
