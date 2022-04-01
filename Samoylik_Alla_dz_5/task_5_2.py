@@ -55,6 +55,9 @@ def hex_mult(numb1, numb2):
             else:
                 mult_list.append(mult)
                 memorize = 0
+        if memorize != 0:
+            mult_list.append(memorize)
+            memorize = 0
         answer.append(mult_list)
 
     # Приводим к очередям
@@ -96,7 +99,7 @@ hex_numb2 = list(input('Второе шестнадцатиричное числ
 print(hex_add(hex_numb1, hex_numb2))
 print(hex_mult(hex_numb1, hex_numb2))
 
-# Ну, или :)
+# Ну или :)
 
 # hex_numb1 = list(input('Первое шестнадцатиричное число: '))
 # hex_numb2 = list(input('Второе шестнадцатиричное число: '))
